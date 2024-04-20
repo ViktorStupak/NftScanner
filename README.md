@@ -35,3 +35,18 @@ The entry point is the implementation of `ITransactionNftScanner` in the DI cont
 var scanner = services.GetRequiredService<ITransactionNftScanner>();
 await scanner.ProcessTransaction(transactionHash);
 ```
+Configuration's example
+``` json
+{
+  "BlockfrostOptions": {
+    "Network": "net",
+    "ApiKey": "yourApiKey"
+  },
+  "StorageOptions": {
+    "RootFolder": "Transactions"
+  },
+  "IpfsGatewayProviderOptions": {
+    "BaseUrl": "https://cloudflare-ipfs.com"
+  }
+}
+```
