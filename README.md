@@ -25,11 +25,9 @@ Detect NFTs related to transaction inputs and outputs. For simplicity, consider 
 - For each scanned transaction, create a folder named after the transaction hash.
 - Inside this folder, download images of all NFTs included in the transaction. Name each image after the NFT it displays.
 
-## Note
-
-Utilize `Microsoft.Extensions.Configuration.UserSecrets` for configuration. See more in the [Microsoft Documentation](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-8.0&tabs=windows).
-
 ## How to Use the App
+
+> Utilize `Microsoft.Extensions.Configuration.UserSecrets` for configuration. See more in the [Microsoft Documentation](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-8.0&tabs=windows).
 
 The entry point is the implementation of `ITransactionNftScanner` in the DI container. Example usage:
 
